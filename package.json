@@ -1,6 +1,6 @@
 {
   "name": "@localized/core",
-  "version": "0.1.0-alpha",
+  "version": "0.1.1-alpha",
   "description": "Core for @localized pacakges",
   "main": "main.js",
   "scripts": {
