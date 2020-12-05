@@ -36,8 +36,7 @@ export function flatMap() {
 
 export function forEach() {
 	return async function <A>(array: A[], funct: (element: A, index: number, array: A[]) => Promise<void>) {
-		for (let i = 0; i < array.length; i++)
-			funct(array[i], i, array);
+		return await Promise.all(array.map((...args) => funct(...args)));
 	}
 }
 
