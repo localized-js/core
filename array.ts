@@ -211,6 +211,8 @@ export function of() {
 	}
 }
 
-export function isArray(arg: any): arg is any[] {
-	return Array.isArray(arg);
+export function isArray() {
+	return function(arg: any): arg is any[] {
+		return Array.isArray(arg);
+	}
 }

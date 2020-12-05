@@ -217,7 +217,9 @@ function of() {
     };
 }
 exports.of = of;
-function isArray(arg) {
-    return Array.isArray(arg);
+function isArray() {
+    return function (arg) {
+        return Array.isArray(arg);
+    };
 }
 exports.isArray = isArray;
