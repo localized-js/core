@@ -1,0 +1,14 @@
+{
+  "name": "@localized/core",
+  "version": "0.1.0-alpha",
+  "description": "Core for @localized pacakges",
+  "main": "main.js",
+  "scripts": {
+    "test": "tsc -p . && node test/main.test.js"
+  },
+  "author": "RubenVerg <me@rubenverg.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^14.14.10"
+  }
+}
