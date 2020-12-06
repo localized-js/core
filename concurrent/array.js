@@ -39,7 +39,8 @@ function flatMap() {
 exports.flatMap = flatMap;
 function forEach() {
     return async function (array, funct) {
-        return await Promise.all(array.map((...args) => funct(...args)));
+        await Promise.all(array.map((...args) => funct(...args)));
+        return;
     };
 }
 exports.forEach = forEach;
